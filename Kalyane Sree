@@ -1,0 +1,110 @@
+EX-02: Cross-Platform Prompting
+Evaluating Diverse Techniques in AI-Powered Text Summarization
+🎯 Aim
+The goal of this experiment is to evaluate and compare the effectiveness of different prompting strategies—Zero-shot, Few-shot, Chain-of-Thought, and Role-based prompting—across multiple AI platforms including ChatGPT, Claude, Gemini, and Microsoft Copilot. The focus is on the specific task of summarizing a 500-word technical article on "The Basics of Blockchain Technology" for undergraduate learners.
+
+📘 Scenario
+Imagine being part of an educational content curation team responsible for simplifying complex research material. The team’s objective is to deliver concise and understandable summaries of technical articles to undergraduate students in various fields.
+
+In this experiment, we simulate such a scenario by attempting to summarize a dense technical article using multiple prompting strategies across different AI systems. The final summary should be accurate, coherent, simple, and quick to generate.
+
+🧠 Prompting Techniques Used
+1. Zero-shot Prompting
+This involves directly asking the AI to perform a task without providing any examples. It tests the model's general understanding and ability to infer the expected output.
+
+Example:
+"Summarize this article on blockchain technology in simple terms."
+
+2. Few-shot Prompting
+This technique introduces a few examples before giving the real task. It evaluates the model's pattern recognition and generalization capabilities.
+
+Example:
+"Example 1: A summary of cloud computing...
+Example 2: A summary of AI basics...
+Now summarize: The Basics of Blockchain Technology."
+
+3. Chain-of-Thought Prompting
+Here, the prompt encourages the AI to break down the reasoning process step-by-step before delivering a final answer. It emphasizes transparency and clarity in thought.
+
+Example:
+"First identify the main ideas from the article. Then explain each idea in simple language. Finally, generate a one-paragraph summary."
+
+4. Role-based Prompting
+The AI is asked to adopt a specific persona, such as a teacher or tour guide, to create responses suited to a particular audience.
+
+Example:
+"You are a college professor explaining blockchain to first-year students. Please summarize the article accordingly."
+
+🛠️ Platforms Evaluated
+ChatGPT (GPT-4) – Developed by OpenAI
+
+Claude (Claude 3) – Developed by Anthropic
+
+Gemini (Gemini 1.5) – Developed by Google DeepMind
+
+Microsoft Copilot – Powered by GPT-4 Turbo via Azure/OpenAI
+
+Each platform was used to perform the same task under identical prompting conditions to ensure fairness in comparison.
+
+🔍 Evaluation Criteria
+Each output was evaluated based on:
+
+Accuracy: Are the fundamental concepts of blockchain (e.g., distributed ledgers, cryptographic hashing, consensus mechanisms) correctly conveyed?
+
+Coherence: Does the summary flow logically from one idea to the next?
+
+Simplicity: Is the summary accessible to someone with no background in the topic?
+
+Speed: How quickly is the summary generated?
+
+User Experience: How easy is it to interact with the platform and customize prompts?
+
+⚙️ Algorithm (Step-by-Step Process)
+Select Article:
+Choose a standardized 500-word article titled “The Basics of Blockchain Technology.”
+
+Design Prompts:
+Prepare four prompt variants corresponding to each prompting strategy.
+
+Interact with Platforms:
+Use each of the four prompts on all four AI platforms to generate summaries.
+
+Log Responses:
+Record the summaries, note the response time, and assess the clarity and usability.
+
+Evaluate:
+Assess each summary based on the predefined criteria—accuracy, coherence, simplicity, speed, and UX.
+
+Compare and Analyze:
+Identify the strengths and weaknesses of each prompt-platform combination.
+
+🧾 Observations and Results Summary
+ChatGPT consistently performed well across all strategies, especially with Chain-of-Thought and Role-based prompting, offering highly structured and readable summaries.
+
+Claude provided excellent logical breakdowns with Chain-of-Thought and showed strong narrative clarity in Zero-shot prompting.
+
+Gemini generated decent outputs but was more verbose and less focused on essential ideas.
+
+Copilot was fast and competent but less creative or contextually rich in summaries.
+
+✅ Conclusion
+Prompting matters just as much as the AI platform. The way a question is framed dramatically influences the quality of output.
+
+Chain-of-Thought prompting consistently produced the most coherent and pedagogically sound summaries.
+
+Role-based prompts were highly effective in aligning the tone and difficulty level for students.
+
+ChatGPT + Chain-of-Thought emerged as the best combination overall.
+
+Claude + Role-based or Chain-of-Thought was a strong alternative.
+
+Gemini and Copilot worked adequately but may require refined prompting for complex educational tasks.
+
+⚠️ Ethical and Practical Considerations
+Bias: Some models emphasized different aspects of blockchain (e.g., financial use vs. security). Care must be taken to balance summaries.
+
+Transparency: AI-generated educational content should be flagged and verified.
+
+Data Use: Public models should not be used with proprietary or copyrighted text.
+
+Review Needed: Human oversight is essential, especially for educational use to prevent misinformation.
